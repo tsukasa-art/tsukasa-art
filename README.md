@@ -18,11 +18,16 @@ Web エンジニア / イラストレーター。
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 ![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
 
 - **フロント**: TypeScript, JavaScript, Astro, Svelte 5, React, Next.js, Tailwind CSS, SCSS
 - **バック・データ**: Node.js, PostgreSQL, Drizzle ORM, Supabase, IndexedDB
 - **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare (R2 / Turnstile), Bun
-- **ツール**: Git, Vitest, Playwright
+- **認証**: Argon2id, Oslo（カスタムセッション管理）
+- **監視・テスト**: Sentry, Vitest, Playwright
+- **ツール**: Git, Bun, rclone（B2 オフサイトバックアップ）
 
 ---
 
@@ -38,4 +43,4 @@ Web エンジニア / イラストレーター。
 
 ## 連絡
 
-お問い合わせは [ポートフォリオのお問い合わせフォーム](https://tsukasa-art.com) からお願いします。
+お問い合わせは [ポートフォリオのお問い合わせフォーム](https://tsukasa-art.com/contact) からお願いします。
