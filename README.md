@@ -26,7 +26,7 @@ Web エンジニア / イラストレーター。
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
 
-- **フロント**: TypeScript, JavaScript, Astro, Svelte 5, React, Next.js, Vue.js, Tailwind CSS, SCSS
+- **フロント**: TypeScript, JavaScript, Astro, Svelte 5, Solid.js, React, Next.js, Vue.js, Tailwind CSS, SCSS
 - **バック・データ**: Node.js, PostgreSQL, Drizzle ORM, Supabase, IndexedDB
 - **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare (R2 / Turnstile), Bun
 - **認証**: Argon2id, Oslo（カスタムセッション管理）
