@@ -12,6 +12,7 @@ Web エンジニア / イラストレーター。
 ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![Solid.js](https://img.shields.io/badge/Solid.js-2C4F7C?style=flat-square&logo=solid&logoColor=white)
 ![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
@@ -42,6 +43,7 @@ Web エンジニア / イラストレーター。
 | **HP**                   | Astro + Svelte 5, VPS 自前運用, 作品管理・カスタム認証・Sentry監視・B2オフサイトバックアップ | [tsukasa-art.com](https://tsukasa-art.com)                                                                           |
 | **サロンレジデモ**       | 美容室向け料金計算レジのデモ。Svelte, TypeScript, Vite, IndexedDB, 日次レポート   | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login) |
 | **画像メタデータ解析**   | 画像を外部に送らずローカルで色・EXIF・配色指標などを表示。Tauri 2 + Vue 3 + TypeScript、解析は Rust。用語集・技術ドキュメント・GitHub Releases（macOS Apple Silicon 向け DMG） | [リポジトリ](https://github.com/Tuki-Sana/image-data-analyzer) · [Releases](https://github.com/Tuki-Sana/image-data-analyzer/releases) |
+| **JAN Sync**             | JANコードスキャン・バーコード生成・価格管理 PWA。Solid.js, TypeScript, IndexedDB, Cloudflare Pages | [リポジトリ](https://github.com/Tuki-Sana/jan-sync) · [アプリ](https://jan-sync.pages.dev/) |
 | **テトリス風ゲーム**     | Vanilla JS + Canvas。難易度・HOLD・BGM切替・ライト/ダークテーマ・PWA。PC/モバイル | [プレイ](https://tuki-sana.github.io/tet-js/)                                                                        |
 
 ---
