@@ -3,6 +3,8 @@
 イラストレーター / Web エンジニア。
 ポートフォリオサイトや業務系 Web アプリを設計・開発・運用しています。VPS でのサーバー構築から認証・DB 設計まで手がけており、デザインと実装の両面からプロダクトを作ります。
 
+技術スタックとプロジェクトの説明は下記のとおりです。より詳しい紹介はポートフォリオの [Engineer](https://tsukasa-art.com/about/engineer) にまとめています。
+
 ---
 
 ## スキル
@@ -15,6 +17,8 @@
 ![SolidJS](https://img.shields.io/badge/SolidJS-2C4F7C?style=flat-square&logo=solid&logoColor=white)
 ![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Zig](https://img.shields.io/badge/Zig-F7A41D?style=flat-square&logo=zig&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
@@ -33,6 +37,7 @@
 - **監視・テスト**: Sentry, Vitest, Playwright
 - **ツール**: Git, Bun, rclone（B2 オフサイトバックアップ）
 - **デスクトップ（個人）**: Tauri 2, Rust（画像解析・ファイル I/O など）
+- **ネイティブ・画像（npm）**: Zig, C — 自作 OSS [**zigpix**](https://www.npmjs.com/package/zigpix) のコア実装。デコード・リサイズ・AVIF / WebP エンコードなどを Node.js（FFI）から利用可能
 
 ---
 
@@ -40,7 +45,8 @@
 
 | 成果物                   | 説明                                                                              | リンク                                                                                                               |
 | ------------------------ | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **HP**                   | Astro + Svelte 5, VPS 自前運用, 作品管理・カスタム認証・Sentry監視・B2オフサイトバックアップ | [tsukasa-art.com](https://tsukasa-art.com)                                                                           |
+| **HP**                   | Astro + Svelte 5, VPS 自前運用, 作品管理・カスタム認証・Sentry監視・B2オフサイトバックアップ。画像トランスコードは自作 zigpix を利用 | [tsukasa-art.com](https://tsukasa-art.com)                                                                           |
+| **zigpix**               | 自作 npm 画像処理ライブラリ。Zig/C のネイティブ実装を Node.js（FFI）から利用し、デコード・リサイズ・AVIF/WebP エンコードなどを提供 | [npm](https://www.npmjs.com/package/zigpix) · [GitHub](https://github.com/Tuki-Sana/zig-pix)                         |
 | **サロンレジデモ**       | 美容室向け料金計算レジのデモ。Svelte, TypeScript, Vite, IndexedDB, 日次レポート   | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login) |
 | **画像メタデータ解析**   | 画像を外部に送らずローカルで色・EXIF・配色指標などを表示。Tauri 2 + Vue 3 + TypeScript、解析は Rust。用語集・技術ドキュメント・GitHub Releases（macOS Apple Silicon 向け DMG） | [リポジトリ](https://github.com/Tuki-Sana/image-data-analyzer) · [Releases](https://github.com/Tuki-Sana/image-data-analyzer/releases) |
 | **JAN Sync**             | JANコードスキャン・バーコード生成・価格管理 PWA。SolidJS, TypeScript, IndexedDB, Cloudflare Pages | [リポジトリ](https://github.com/Tuki-Sana/jan-sync) · [アプリ](https://jan-sync.pages.dev/) |
