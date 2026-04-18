@@ -31,13 +31,13 @@
 ![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
 
 - **フロント**: TypeScript, JavaScript, Astro, Svelte 5, SolidJS, React, Next.js, Vue.js, Tailwind CSS, SCSS
-- **バック・データ**: Node.js, PostgreSQL, Drizzle ORM, Supabase, IndexedDB
-- **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare (R2 / Turnstile), Bun
-- **認証**: Argon2id, Oslo（カスタムセッション管理）
+- **バック・データ**: Node.js, Bun, PostgreSQL, Drizzle ORM, Zod, Supabase, IndexedDB
+- **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare（CDN / R2）
+- **認証**: カスタムセッション・パスワードハッシュ（公開プロフィールではライブラリ名を割愛）
 - **監視・テスト**: Sentry, Vitest, Playwright
 - **ツール**: Git, Bun, rclone（B2 オフサイトバックアップ）
 - **デスクトップ（個人）**: Tauri 2, Rust（画像解析・ファイル I/O など）
-- **ネイティブ・画像（npm）**: Zig, C — 自作 OSS [**zigpix**](https://www.npmjs.com/package/zigpix) のコア実装。デコード・リサイズ・AVIF / WebP エンコードなどを Node.js（FFI）から利用可能
+- **ネイティブ・画像（npm）**: Zig, C — 自作 OSS [**zigpix**](https://www.npmjs.com/package/zigpix) のコア実装。デコード・リサイズ・AVIF / WebP エンコードなどを Node.js / Bun / Deno（ネイティブ FFI）から利用可能。ブラウザ向けは [**zigpix-wasm**](https://www.npmjs.com/package/zigpix-wasm)（WebAssembly）
 
 ---
 
@@ -45,9 +45,9 @@
 
 | 成果物                   | 説明                                                                              | リンク                                                                                                               |
 | ------------------------ | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **HP**                   | Astro + Svelte 5, VPS 自前運用, 作品管理・カスタム認証・Sentry監視・B2オフサイトバックアップ。画像トランスコードは自作 zigpix を利用 | [tsukasa-art.com](https://tsukasa-art.com)                                                                           |
-| **zigpix**               | 自作 npm 画像処理ライブラリ。Zig/C のネイティブ実装を Node.js（FFI）から利用し、デコード・リサイズ・AVIF/WebP エンコードなどを提供 | [npm](https://www.npmjs.com/package/zigpix) · [GitHub](https://github.com/Tuki-Sana/zig-pix)                         |
-| **サロンレジデモ**       | 美容室向け料金計算レジのデモ。Svelte, TypeScript, Vite, IndexedDB, 日次レポート   | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login) |
+| **HP**                   | Astro + Svelte 5, VPS 自前運用（本番 Bun）, 作品管理・カスタム認証・Sentry 監視・Cloudflare R2・B2 オフサイトバックアップ。画像トランスコードは自作 zigpix | [tsukasa-art.com](https://tsukasa-art.com)                                                                           |
+| **zigpix**               | 自作 npm 画像処理ライブラリ。Zig/C のネイティブ実装を Node.js / Bun / Deno（FFI）から利用し、デコード・リサイズ・AVIF/WebP エンコードなどを提供（ブラウザ向けは zigpix-wasm） | [npm](https://www.npmjs.com/package/zigpix) · [GitHub](https://github.com/Tuki-Sana/zig-pix)                         |
+| **サロンレジデモ**       | 美容室向け料金計算レジの**公開デモ**。本番（Svelte 5）相当の UX を **Vanilla JS** で再実装。Vite, Tailwind CSS, IndexedDB, PWA, 日次レポート | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login) |
 | **画像メタデータ解析**   | 画像を外部に送らずローカルで色・EXIF・配色指標などを表示。Tauri 2 + Vue 3 + TypeScript、解析は Rust。用語集・技術ドキュメント・GitHub Releases（macOS Apple Silicon 向け DMG） | [リポジトリ](https://github.com/Tuki-Sana/image-data-analyzer) · [Releases](https://github.com/Tuki-Sana/image-data-analyzer/releases) |
 | **JAN Sync**             | JANコードスキャン・バーコード生成・価格管理 PWA。SolidJS, TypeScript, IndexedDB, Cloudflare Pages | [リポジトリ](https://github.com/Tuki-Sana/jan-sync) · [アプリ](https://jan-sync.pages.dev/) |
 | **テトリス風ゲーム**     | Vanilla JS + Canvas。難易度・HOLD・BGM切替・ライト/ダークテーマ・PWA。PC/モバイル | [プレイ](https://tuki-sana.github.io/tet-js/)                                                                        |
