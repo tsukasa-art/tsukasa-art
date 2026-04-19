@@ -53,7 +53,7 @@
 | **サロンレジデモ**       | 美容室向け料金計算レジの**公開デモ**。本番（Svelte 5）相当の UX を **Vanilla JS** で再実装。Vite, Tailwind CSS, IndexedDB, PWA, 日次レポート | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login) |
 | **画像メタデータ解析**   | 画像を外部に送らずローカルで色・EXIF・配色指標などを表示。Tauri 2 + Vue 3 + TypeScript、解析は Rust。用語集・技術ドキュメント・GitHub Releases（macOS Apple Silicon 向け DMG） | [リポジトリ](https://github.com/Tuki-Sana/image-data-analyzer) · [Releases](https://github.com/Tuki-Sana/image-data-analyzer/releases) |
 | **JAN Sync**             | 小売棚前向け JAN 管理 PWA。スキャン・バーコード一括生成・横断検索。**CSV/TSV エクスポート**（列プリセット・区切り・個数の行展開・表計算向け JAN 列）。連続スキャン・棚卸しモード・読取時のバイブ/短音。Vitest で出力ロジックを検証。SolidJS, TypeScript, Tailwind v4, IndexedDB, Cloudflare Pages, PWA（Workbox） | [リポジトリ](https://github.com/Tuki-Sana/jan-sync) · [アプリ](https://jan-sync.pages.dev/) |
-| **テトリス風ゲーム**     | Vanilla JS + Canvas。難易度・HOLD・BGM切替・ライト/ダークテーマ・PWA。PC/モバイル | [リポジトリ](https://github.com/Tuki-Sana/tet-js) · [プレイ](https://tuki-sana.github.io/tet-js/)                    |
+| **テトリス風ゲーム**     | Vanilla JS + Canvas。難易度・HOLD・チュートリアル・BGM切替・ライト/ダークテーマ・PWA。PC/モバイル。Playwright（Chromium / WebKit / Firefox・モバイル用 spec）、GitHub Actions、ユニット（node:test） | [リポジトリ](https://github.com/Tuki-Sana/tet-js) · [プレイ](https://tuki-sana.github.io/tet-js/)                    |
 
 ---
 
