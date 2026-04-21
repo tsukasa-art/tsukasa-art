@@ -37,7 +37,7 @@
 - **フロント**: TypeScript, JavaScript, Astro, Svelte 5, SolidJS, React, Next.js, Vue.js, CSS, SCSS, Tailwind CSS
 - **バック・データ**: Node.js, Bun, PostgreSQL, Drizzle ORM, Zod, Supabase, IndexedDB
 - **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare（CDN / R2）
-- **認証**: カスタムセッション・パスワードハッシュ（公開プロフィールではライブラリ名を割愛）
+- **認証**: カスタムセッション・パスワードハッシュ
 - **監視・テスト**: Sentry, Vitest, Playwright
 - **ツール**: Git, Bun, rclone（B2 オフサイトバックアップ）
 - **デスクトップ（個人）**: Tauri 2, Rust（画像解析・ファイル I/O など）
