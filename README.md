@@ -36,8 +36,8 @@
 
 - **フロント**: TypeScript, JavaScript, Astro, Svelte 5, SolidJS, React, Next.js, Vue.js, CSS, SCSS, Tailwind CSS
 - **バック・データ**: Node.js, Bun, PostgreSQL, Drizzle ORM, Zod, Supabase, IndexedDB
-- **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare（CDN / R2）
-- **認証**: カスタムセッション・パスワードハッシュ
+- **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare (CDN / R2 / D1)
+- **認証**: Better Auth, カスタムセッション・パスワードハッシュ
 - **監視・テスト**: Sentry, Vitest, Playwright
 - **ツール**: Git, Bun, rclone（B2 オフサイトバックアップ）
 - **デスクトップ（個人）**: Tauri 2, Rust（画像解析・ファイル I/O など）
@@ -55,6 +55,7 @@
 | **サロンレジデモ**     | 美容室向け料金計算レジの**公開デモ**。本番（Svelte 5）相当の UX を **Vanilla JS** で再実装。Vite, Tailwind CSS, IndexedDB, PWA, 日次レポート                                                                                                                                                                      | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login)                   |
 | **JAN Sync**           | 小売棚前向け JAN 管理 PWA。スキャン・バーコード一括生成・横断検索。**CSV/TSV エクスポート**（列プリセット・区切り・個数の行展開・表計算向け JAN 列）。連続スキャン・棚卸しモード・読取時のバイブ/短音。Vitest で出力ロジックを検証。SolidJS, TypeScript, Tailwind v4, IndexedDB, Cloudflare Pages, PWA（Workbox） | [リポジトリ](https://github.com/Tuki-Sana/jan-sync) · [アプリ](https://jan-sync.pages.dev/)                                            |
 | **Teinte**             | 画像を外部サーバーに送らずローカル完結で色・EXIF・配色を解析するデスクトップアプリ。Lab 空間 k-means 支配色推定・ΔE2000 近似・WCAG コントラスト・PCCS 風トーン・調和スコア・PDF レポート出力。最大 48 色×複数セットのスポイトパレット（JSON export/import）。Tauri 2 + Vue 3 + TypeScript、解析ロジックは Rust。macOS（ARM/Intel）・Windows 対応、GitHub Releases 自動ビルド | [リポジトリ](https://github.com/Tuki-Sana/teinte) · [Releases](https://github.com/Tuki-Sana/teinte/releases)                           |
+| **BaiToTime**         | アルバイト向けシフト管理・給与計算 PWA。SvelteKit 5, Cloudflare D1, Better Auth, Tailwind v4, Drizzle ORM。労働基準法準拠の自動バリデーション、QR打刻、有給管理、通知システム。イラストレーターの視点を活かしたプレミアムな UI と AI アシステッド・デザイン。 | [リポジトリ](https://github.com/Tuki-Sana/BaiToTime) · [アプリ](https://baitotime.pages.dev/)                                          |
 | **テトリス風ゲーム**   | Vanilla JS + Canvas。難易度・HOLD・チュートリアル・BGM切替・ライト/ダークテーマ・PWA。PC/モバイル。Playwright（Chromium / WebKit / Firefox・モバイル用 spec）、GitHub Actions、ユニット（node:test）                                                                                                              | [リポジトリ](https://github.com/Tuki-Sana/tet-js) · [プレイ](https://tuki-sana.github.io/tet-js/)                                      |
 
 ---
