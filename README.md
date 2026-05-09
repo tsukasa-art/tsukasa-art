@@ -1,65 +1,113 @@
-# tsukasa
+# Tsukasa (tsukasa-art)
 
-イラストレーター / ソフトウェアエンジニア。
-ポートフォリオサイトや業務系 Web アプリを設計・開発・運用しています。VPS でのサーバー構築から認証・DB 設計まで手がけており、デザインと実装の両面からプロダクトを作ります。
+**Systems & UX Developer — Perceptual Engineering · Local-First Tooling · Constrained-Environment Infrastructure**
 
-技術スタックとプロジェクトの説明は下記のとおりです。より詳しい紹介はポートフォリオの [Engineer](https://tsukasa-art.com/about/engineer) にまとめています。
+I work at the intersection of physical constraints, human perception, and system runtimes. My engineering decisions are driven by verifiable friction points: CPU contention on single-digit-vCPU nodes, the measurable gap between RGB math and human visual perception, `.env` files leaking to AI agents, Japanese tax law encoded as runtime validation logic, and 32-bit Windows DX9 engines refusing to run on Apple Silicon.
 
----
+I adopt Zig, Rust, or C only when Node/Web ecosystems introduce unacceptable overhead, unpredictable latency, or concurrency ceilings. Everything else stays in high-productivity runtimes.
 
-## スキル
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Astro](https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white)
-![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![SolidJS](https://img.shields.io/badge/SolidJS-2C4F7C?style=flat-square&logo=solid&logoColor=white)
-![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Zig](https://img.shields.io/badge/Zig-F7A41D?style=flat-square&logo=zig&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
-![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
-
-<!-- ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) -->
-
-- **フロント**: TypeScript, JavaScript, Astro, Svelte 5, SolidJS, React, Next.js, Vue.js, CSS, SCSS, Tailwind CSS
-- **バック・データ**: Node.js, Bun, PostgreSQL, Drizzle ORM, Zod, Supabase, IndexedDB
-- **インフラ**: VPS (Linux), Podman Compose, Nginx, Cloudflare (CDN / R2 / D1)
-- **認証**: Better Auth, カスタムセッション・パスワードハッシュ
-- **監視・テスト**: Sentry, Vitest, Playwright
-- **ツール**: Git, Bun, rclone（B2 オフサイトバックアップ）
-- **デスクトップ（個人）**: Tauri 2, Rust（画像解析・ファイル I/O など）
-- **ネイティブ・画像**: Zig, C — 画像処理ライブラリ [**zenpix**](https://www.npmjs.com/package/zenpix)（MIT）のコア実装。デコード・リサイズ・AVIF / WebP エンコードなどを Node.js / Bun / Deno（ネイティブ FFI）から利用可能。ブラウザ向けは [**zenpix-wasm**](https://www.npmjs.com/package/zenpix-wasm)（WebAssembly）
+> イラストレーターとしての視覚認知の専門性と、低レイヤからインフラにまたがる実装を交差させ、システムや UI の境界に生じる「摩擦」を解決しています。
 
 ---
 
-## 主な成果物
+## Engineering Stance
 
-| 成果物                 | 説明                                                                                                                                                                                                                                                                                                              | リンク                                                                                                                                 |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **HP**                 | Astro + Svelte 5, VPS 自前運用（本番 Bun）, 作品管理・カスタム認証・Sentry 監視・Cloudflare R2・B2 オフサイトバックアップ。画像トランスコードは zenpix                                                                                                                                                            | [tsukasa-art.com](https://tsukasa-art.com)                                                                                             |
-| **zenpix**             | MIT ライセンスの画像処理ライブラリ。Zig/C のネイティブ実装を Node.js / Bun / Deno（FFI）から利用し、デコード・リサイズ・AVIF/WebP エンコードなどを提供（ブラウザ向けは zenpix-wasm）                                                                                                                              | [npm](https://www.npmjs.com/package/zenpix) · [リポジトリ](https://github.com/Tuki-Sana/zenpix)                                       |
-| **Amulet**             | AIエージェント利用時の .env 漏洩リスクに対応するローカル秘密管理 CLI。Argon2id + ChaCha20-Poly1305 暗号化、machine_id バインドで vault を別マシンへのコピーから保護。POSIX /dev/tty・Windows CONIN$ でパイプ中もエコーオフ入力。Linux / macOS / Windows 対応、GitHub Releases バイナリ配布                        | [リポジトリ](https://github.com/Tuki-Sana/amulet) · [Releases](https://github.com/Tuki-Sana/amulet/releases)                           |
-| **サロンレジデモ**     | 美容室向け料金計算レジの**公開デモ**。本番（Svelte 5）相当の UX を **Vanilla JS** で再実装。Vite, Tailwind CSS, IndexedDB, PWA, 日次レポート                                                                                                                                                                      | [リポジトリ](https://github.com/Tuki-Sana/salon-register-demo) · [デモ](https://salon-register-demo.pages.dev/login)                   |
-| **JAN Sync**           | 小売棚前向け JAN 管理 PWA。スキャン・バーコード一括生成・横断検索。**CSV/TSV エクスポート**（列プリセット・区切り・個数の行展開・表計算向け JAN 列）。連続スキャン・棚卸しモード・読取時のバイブ/短音。Vitest で出力ロジックを検証。SolidJS, TypeScript, Tailwind v4, IndexedDB, Cloudflare Pages, PWA（Workbox） | [リポジトリ](https://github.com/Tuki-Sana/jan-sync) · [アプリ](https://jan-sync.pages.dev/)                                            |
-| **Teinte**             | 画像を外部サーバーに送らずローカル完結で色・EXIF・配色を解析するデスクトップアプリ。Lab 空間 k-means 支配色推定・ΔE2000 近似・WCAG コントラスト・PCCS 風トーン・調和スコア・PDF レポート出力。最大 48 色×複数セットのスポイトパレット（JSON export/import）。Tauri 2 + Vue 3 + TypeScript、解析ロジックは Rust。macOS（ARM/Intel）・Windows 対応、GitHub Releases 自動ビルド | [リポジトリ](https://github.com/Tuki-Sana/teinte) · [Releases](https://github.com/Tuki-Sana/teinte/releases)                           |
-| **BaiToTime**         | アルバイト向けシフト管理・給与計算 PWA。SvelteKit 5, Cloudflare D1, Better Auth, Tailwind v4, Drizzle ORM。労働基準法準拠の自動バリデーション、QR打刻、有給管理、通知システム。イラストレーターの視点を活かしたプレミアムな UI と AI アシステッド・デザイン。 | [リポジトリ](https://github.com/Tuki-Sana/BaiToTime) · [アプリ](https://baitotime.pages.dev/)                                          |
-| **テトリス風ゲーム**   | Vanilla JS + Canvas。難易度・HOLD・チュートリアル・BGM切替・ライト/ダークテーマ・PWA。PC/モバイル。Playwright（Chromium / WebKit / Firefox・モバイル用 spec）、GitHub Actions、ユニット（node:test）                                                                                                              | [リポジトリ](https://github.com/Tuki-Sana/tet-js) · [プレイ](https://tuki-sana.github.io/tet-js/)                                      |
+| Constraint Class | Observed Problem | Implementation Approach |
+| :--- | :--- | :--- |
+| **Hardware** | `libvips`-style processors saturate 1–2 vCPU nodes under parallel transcoding | Purpose-built Zig/C engine with controlled concurrency; FFI into Node/Bun |
+| **Perception** | RGB/HSL coordinates fail to model human visual discrimination | CIE $L^*a^*b^*$ color space, $\Delta E_{2000}$ distance, $k$-means clustering in perceptual space |
+| **Security** | `.env` files leak to AI agents; cloud secret managers add network dependency | Hardware-bound AES: Argon2id + ChaCha20-Poly1305, cryptographically locked to OS `machine_id` |
+| **Regulation** | Japanese tax thresholds ("103万円の壁") generate cognitive overhead; existing tools use server-round-trips | Complex rule sets compiled into client-side validation logic; offline-first PWA |
+| **Platform** | Apple Silicon deprecates Boot Camp; DX9 visual-novel engines (BGI, Kirikiri, やねうらおSDK) are Windows-only | Wine + DXVK 2.7.1 + MoltenVK → Metal pipeline; Phase 1 runtime validation confirmed *(private R&D)* |
 
 ---
 
-## 連絡
+## Open-Source Projects
 
-お問い合わせは [ポートフォリオのお問い合わせフォーム](https://tsukasa-art.com/contact) からお願いします。
+### 01. [Amulet](https://github.com/Tuki-Sana/amulet) — *Zero-Trace Local Secret Manager*
+
+- **Problem:** Standard `.env` files are readable by AI coding agents and scripts. Enterprise secret managers introduce network latency and setup friction.
+- **Implementation:** A CLI written in Zig. Encrypts secrets using Argon2id + ChaCha20-Poly1305, bound to the local hardware via OS `machine_id` derivation. Designed to prevent terminal history leakage and agent-accessible plaintext.
+- **Stack:** Zig · `crypto.zig` (Argon2id, ChaCha20-Poly1305) · `probe_id.zig` (hardware ID derivation) · cross-platform build via `build.zig`
+- [Repository](https://github.com/Tuki-Sana/amulet) · [Releases](https://github.com/Tuki-Sana/amulet/releases)
+
+### 02. [zenpix](https://github.com/Tuki-Sana/zenpix) — *Constrained-Environment Image Engine*
+
+- **Problem:** Multi-threaded processors (`libvips`) cause severe vCPU contention and upstream service degradation on 1–2 core VPS nodes during parallel transcoding.
+- **Implementation:** A Zig/C image processing engine with bicubic resizing and AVIF/WebP encoding. Interfaces to Node.js, Bun, and Deno via zero-copy FFI. Prioritizes stable latency over maximizing raw throughput. Pre-built `libpict.dylib` confirmed operational on Apple Silicon (macOS Tahoe).
+- **Stack:** Zig · C · Node.js FFI · AVIF/WebP encoding
+- [npm](https://www.npmjs.com/package/zenpix) · [Repository](https://github.com/Tuki-Sana/zenpix)
+
+### 03. [Teinte](https://github.com/Tuki-Sana/teinte) — *Perceptual Color Analysis Desktop App*
+
+- **Problem:** Digital color pickers return mathematical coordinates. No offline tool evaluates real-world human perception, WCAG contrast accessibility, or color harmony simultaneously.
+- **Implementation:** A local-first desktop application. Rust backend implements $k$-means clustering in CIE $L^*a^*b^*$ space to extract dominant color clusters. Calculates perceptual distance via $\Delta E_{2000}$. Frontend handles color theory, harmony scoring, WCAG 2.1 contrast ratios, and palette export.
+- **Stack:** Tauri 2 · Vue 3 · TypeScript · Rust (`analyze.rs`, `color_theory.rs`, `harmony.rs`, `palette_match.rs`)
+- [Repository](https://github.com/Tuki-Sana/teinte) · [Releases](https://github.com/Tuki-Sana/teinte/releases)
+
+### 04. [BaiToTime](https://github.com/Tuki-Sana/BaiToTime) — *Shift & Payroll Compliance Simulator*
+
+- **Problem:** Japan's labor income thresholds ("103万円の壁" and related brackets) impose significant cognitive load on hourly workers. Existing tools rely on server round-trips for validation.
+- **Implementation:** An offline-first PWA. Complex tax and labor law rules are compiled into client-side validation logic with real-time feedback. Full shift management: multi-type scheduling (shift, day-off, paid leave, business trip), payroll calculation, WCAG-compliant visual hierarchy. Deployed on Cloudflare Pages with D1 (SQLite) and Drizzle ORM. 10 migration cycles completed.
+- **Stack:** SvelteKit 5 · Svelte 5 (runes) · Cloudflare D1 · Drizzle ORM · Better Auth · Playwright · Vitest
+- [Repository](https://github.com/Tuki-Sana/BaiToTime) · [App](https://baitotime.pages.dev/)
+
+---
+
+## Operational Infrastructure *(Private)*
+
+Production infrastructure and specialized research remain private for operational and security boundaries.
+
+- **Zero-dependency deployments:** Podman Compose with static Go/Zig/Rust binaries. No daemon dependencies.
+- **Asset-policy routing:** Hybrid Cloudflare R2 + self-hosted Nginx for SFW/R18 asset-class separation.
+- **Full-text search:** Self-hosted PostgreSQL + PGroonga for normalized Japanese FTS without PaaS overhead.
+
+---
+
+## R&D: Runtime Preservation *(Private · Active)*
+
+Investigating Windows DX9 / DirectSound visual-novel engine compatibility on Apple Silicon.
+
+**Confirmed (2026-05-08):** BGI/Ethornell engine (*Houkago Cinderella 2*, HOOKSOFT) running on M4 Pro / macOS Tahoe 26.4.1.
+
+```
+DX9 game binary
+  └─ Wine 7.7 (ARM build, Whisky distribution)
+       └─ DXVK 2.7.1  (d3d9.dll override: DX9 → Vulkan)
+            └─ MoltenVK  (Vulkan → Metal)
+                 └─ M4 Pro GPU / macOS Tahoe 26.4.1
+```
+
+**Status:**
+
+- [x] Title screen, scene transitions, Japanese text rendering, mouse input
+- [x] Kirikiri/KAG engine: graphics + audio confirmed operational
+- [ ] BGI audio: `winecoreaudio.drv` yields `ca_channel_layout_to_channel_mask: Unhandled channel 0xffffffff` on macOS Tahoe — Wine 10.0 source build in progress
+
+**Engine coverage:** BGI/Ethornell · Kirikiri/KAG · やねうらおGameSDK 3rd · RealLive (`rlvm` route) · Circus ADV (DirectDraw path)
+
+**Research scope:** DX9→DXVK→MoltenVK→Metal pipeline validation · CoreAudio channel-mask mismatch analysis · DRM layer identification (Sofkudenchi / ソフト電池) · Engine binary fingerprinting.
+
+---
+
+## Technology Stack
+
+| Layer | Tools | Stance |
+| :--- | :--- | :--- |
+| **System / Native** | Zig, Rust, C, Tauri 2 | Explicit allocation, minimal binaries, targeted FFI bridges — not a default stack choice |
+| **Frontend / Web** | TypeScript, Astro, SvelteKit 5, Svelte 5, Vue 3 | Minimize hydration cost, semantic HTML, reduce main-thread blocking |
+| **Infrastructure** | Linux (VPS), Podman, Cloudflare Pages/R2/D1, PostgreSQL | Self-hosted, reproducible; optimized for concurrency control on low-core nodes |
+| **Testing / Ops** | Playwright, Vitest, Sentry, Better Auth | Automated regression coverage; low-maintenance telemetry |
+| **R&D / Compat** | Wine, DXVK, MoltenVK, Metal, Swift/SwiftUI (planned) | Platform compatibility layer research for Japanese visual-novel engine preservation |
+
+---
+
+## Collaboration
+
+Available for contract-based R&D, infrastructure consulting, and technical advisory on:
+
+- Resolving vCPU contention, runtime latency, or FFI overhead in edge/VPS environments
+- Designing bridge layers between native runtimes (Zig/Rust/C) and Web ecosystems
+- Translating complex perceptual or regulatory data into actionable UI logic
+
+Contact: [tsukasa-art.com/contact](https://tsukasa-art.com/contact)
