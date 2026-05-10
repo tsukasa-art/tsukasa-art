@@ -45,13 +45,13 @@ I adopt Zig, Rust, or C only when Node/Web ecosystems introduce unacceptable ove
 - **Stack:** Tauri 2 · Vue 3 · TypeScript · Rust (`analyze.rs`, `color_theory.rs`, `harmony.rs`, `palette_match.rs`)
 - [Repository](https://github.com/Tuki-Sana/teinte) · [Releases](https://github.com/Tuki-Sana/teinte/releases)
 
-### 04. [BaiToTime](https://github.com/Tuki-Sana/BaiToTime) — *Shift & Payroll Compliance Simulator*
+<!-- ### 04. [BaiToTime](https://github.com/Tuki-Sana/BaiToTime) — *Shift & Payroll Compliance Simulator*
 
 - **Problem:** Japan's labor income thresholds ("103万円の壁" and related brackets) impose significant cognitive load on hourly workers. Existing tools rely on server round-trips for validation.
 - **Implementation:** An offline-first PWA. Complex tax and labor law rules are compiled into client-side validation logic with real-time feedback. Full shift management: multi-type scheduling (shift, day-off, paid leave, business trip), payroll calculation, WCAG-compliant visual hierarchy. Deployed on Cloudflare Pages with D1 (SQLite) and Drizzle ORM. 10 migration cycles completed.
 - **Stack:** SvelteKit 5 · Svelte 5 (runes) · Cloudflare D1 · Drizzle ORM · Better Auth · Playwright · Vitest
-- [Repository](https://github.com/Tuki-Sana/BaiToTime) · [App](https://baitotime.pages.dev/)
-
+- [Repository](https://github.com/Tuki-Sana/BaiToTime) · [App](https://baitotime.pages.dev/) 
+-->
 ---
 
 ## Operational Infrastructure *(Private)*
