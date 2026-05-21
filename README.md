@@ -12,19 +12,19 @@ Every project starts from something that wasn't working. The layer — systems, 
 | :--- | :--- | :--- |
 | **Hardware** | `libvips`-style processors saturate 1–2 vCPU nodes under parallel transcoding | Purpose-built Zig/C engine with controlled concurrency; FFI into Node/Bun |
 | **Perception** | RGB/HSL coordinates fail to model human visual discrimination | CIE $L^*a^*b^*$ color space, $\Delta E_{2000}$ distance, $k$-means clustering in perceptual space |
-| **Security** | `.env` files leak to AI agents; cloud secret managers add network dependency | Hardware-bound AES: Argon2id + ChaCha20-Poly1305, cryptographically locked to OS `machine_id` |
+| **Security** | `.env` files leak to AI agents; cloud secret managers add network dependency | Hardware-bound secrets: Argon2id + XChaCha20-Poly1305, cryptographically locked to OS `machine_id` |
 | **Platform** | Apple Silicon has no Boot Camp; 10+ DX9 Windows-only visual-novel engines (BGI, KiriKiri Z, CMVS, CatSystem2, Artemis, RealLive…) needed on macOS | Wine 10.0 (x86_64 via Rosetta 2) + DXVK + MoltenVK → Metal; all major ADV engines confirmed; Swift launcher (Wukiyo) + Wine fork (wine-wukiyo) in development |
 
 ---
 
 ## Projects
 
-### 01. [Amulet](https://github.com/Tuki-Sana/amulet) — *Zero-Trace Local Secret Manager* · MIT
+### 01. [Amulet](https://github.com/tsukasa-art/amulet) — *Zero-Trace Local Secret Manager* · MIT
 
 - **Problem:** Standard `.env` files are readable by AI coding agents and scripts. Enterprise secret managers introduce network latency and setup friction.
-- **Implementation:** A CLI written in Zig. Encrypts secrets using Argon2id + ChaCha20-Poly1305, bound to the local hardware via OS `machine_id` derivation. Designed to prevent terminal history leakage and agent-accessible plaintext.
-- **Stack:** Zig · `crypto.zig` (Argon2id, ChaCha20-Poly1305) · `probe_id.zig` (hardware ID derivation) · cross-platform build via `build.zig`
-- [Repository](https://github.com/Tuki-Sana/amulet) · [Releases](https://github.com/Tuki-Sana/amulet/releases)
+- **Implementation:** A CLI written in Rust (v1.0.0; rewritten from Zig). Encrypts secrets using Argon2id + XChaCha20-Poly1305, bound to the local hardware via OS `machine_id` derivation. `zeroize` and `mlock` ensure secrets are erased from memory and never swapped to disk. Designed to prevent terminal history leakage and agent-accessible plaintext.
+- **Stack:** Rust · `crypto.rs` (Argon2id, XChaCha20-Poly1305) · `machine_id.rs` (hardware ID derivation) · `vault.rs` (file I/O, locking) · cross-platform via `cargo`
+- [Repository](https://github.com/tsukasa-art/amulet) · [Releases](https://github.com/tsukasa-art/amulet/releases) · [Docs](https://amulet.tsukasa-art.com)
 
 ### 02. [zenpix](https://github.com/Tuki-Sana/zenpix) — *Constrained-Environment Image Engine* · MIT
 
