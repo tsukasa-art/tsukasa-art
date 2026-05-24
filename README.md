@@ -31,14 +31,14 @@ Every project starts from something that wasn't working. The layer — systems, 
 - **Problem:** Multi-threaded processors (`libvips`) cause severe vCPU contention and upstream service degradation on 1–2 core VPS nodes during parallel transcoding.
 - **Implementation:** A Zig/C image processing engine with Lanczos-3 resizing and AVIF/WebP encoding. Interfaces to Node.js, Bun, and Deno via zero-copy FFI. Prioritizes stable latency over maximizing raw throughput. Pre-built `libpict.dylib` confirmed operational on Apple Silicon (macOS Tahoe).
 - **Stack:** Zig · C · Node.js FFI · AVIF/WebP encoding
-- [npm](https://www.npmjs.com/package/zenpix) · [Repository](https://github.com/Tuki-Sana/zenpix)
+- [npm](https://www.npmjs.com/package/zenpix) · [Repository](https://github.com/tsukasa-art/zenpix)
 
 ### 03. [Teinte](https://github.com/Tuki-Sana/teinte) — *Perceptual Color Analysis Desktop App* · Proprietary
 
 - **Problem:** Digital color pickers return RGB coordinates that fail to model human visual discrimination. No offline desktop tool simultaneously evaluates perceptual color distance ($\Delta E_{2000}$), WCAG contrast accessibility, and color harmony — without uploading images to a server. A Rust-only immediate-mode GUI prototype (`egui`) confirmed the color algorithms, but lacked the layout control needed for a multi-panel palette interface.
 - **Implementation:** Tauri 2 with Vue 3 handling UI precision via HTML/CSS, delegating only the computationally heavy tasks ($k$-means in $L^*a^*b^*$ space, $\Delta E_{2000}$ distance) to a focused Rust backend.
 - **Stack:** Tauri 2 · Vue 3 · TypeScript · Rust (`analyze.rs`, `color_theory.rs`, `harmony.rs`, `palette_match.rs`)
-- [Repository](https://github.com/Tuki-Sana/teinte) · [Releases](https://github.com/Tuki-Sana/teinte/releases)
+- [Repository](https://github.com/tsukasa-art/teinte) · [Releases](https://github.com/tsukasa-art/teinte/releases)
 
 <!-- ### 04. [BaiToTime](https://github.com/Tuki-Sana/BaiToTime) — *Shift & Payroll Compliance Simulator*
 
@@ -83,8 +83,8 @@ Validating and documenting a production-grade compatibility stack for Japanese W
 | やねうらおGameSDK 3rd | ⚠️ Partial | DRM (ソフト電池 / sdsys64.dll) blocks some titles |
 
 **In development:**
-- `wine-wukiyo` — Wine 10.0 fork: `macdrv_GetImage` hook in `winemac.drv` for Metal-rendered window capture; save-thumbnail injection
-- `Wukiyo` — Swift/SwiftUI launcher: per-title Wine prefix management · kqueue file watch · ScreenCaptureKit thumbnail capture
+- [`wine-wukiyo`](https://github.com/tsukasa-art/wine-wukiyo) — Wine 10.0 fork: `macdrv_GetImage` hook in `winemac.drv` for Metal-rendered window capture; save-thumbnail injection
+- [`Wukiyo`](https://github.com/tsukasa-art/Wukiyo) — Swift/SwiftUI launcher: per-title Wine prefix management · kqueue file watch · ScreenCaptureKit thumbnail capture · [wukiyo.app](https://wukiyo.app)
 
 **Research scope:** DX9→DXVK→MoltenVK→Metal pipeline · XP3 archive reverse-engineering · KiriKiri Z KAG3 script patching · DirectShow/LAV Filters integration · Apple amfid/allow-jit constraints on Wine arm64 · Rosetta 2 x86_64 translation limits
 
