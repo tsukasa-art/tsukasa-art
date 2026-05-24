@@ -1,8 +1,8 @@
 # Tsukasa (tsukasa-art)
 
-**Systems · Low-layer · Web**
+**Systems · Low-level · Web**
 
-I build things that shouldn't exist on paper. Windows visual-novel engines running on Apple Silicon. An image processor that doesn't saturate a 2-core VPS. A secret manager cryptographically locked to hardware. Web products ship too — but the interesting problems live lower.
+Systems programming to shipped web products — solo, end to end. Windows visual-novel engines running on Apple Silicon. An image processor that doesn't saturate a 2-core VPS. A secret manager cryptographically locked to hardware.
 
 ---
 
@@ -40,11 +40,6 @@ Zig/C image processing engine with Lanczos-3 resizing and AVIF/WebP encoding. Ze
 CLI that encrypts secrets using Argon2id + XChaCha20-Poly1305, cryptographically bound to the local `machine_id`. Decryption fails on any other machine. Built for environments where `.env` files are readable by AI agents and scripts.
 · [Releases](https://github.com/tsukasa-art/amulet/releases)
 
-### [Teinte](https://github.com/tsukasa-art/teinte) — Perceptual Color Analysis · Proprietary
-
-Tauri 2 + Vue 3 desktop app. $k$-means in $L^*a^*b^*$ space, $\Delta E_{2000}$ distance, WCAG contrast ratio — fully offline, no server.
-· [Releases](https://github.com/tsukasa-art/teinte/releases)
-
 ---
 
 ## Web & Shipped Products
@@ -54,8 +49,6 @@ Details → [tsukasa-art.com/engineer](https://tsukasa-art.com/engineer)
 
 ---
 
-## Collaboration
+## Contact
 
-Available for contract-based R&D, infrastructure consulting, and technical advisory — especially at the intersection of native runtimes and Web ecosystems.
-
-Contact: [tsukasa-art.com/contact](https://tsukasa-art.com/contact)
+[tsukasa-art.com/contact](https://tsukasa-art.com/contact)
