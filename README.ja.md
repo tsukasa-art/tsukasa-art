@@ -32,13 +32,13 @@ Zenn 技術連載（公開中）:
 
 ### [zenpix](https://github.com/tsukasa-art/zenpix) — 制約環境向け画像処理エンジン · MIT
 
-Zig/C 製の画像処理エンジン。Lanczos-3 リサイズ・AVIF/WebP エンコードを実装し、Node.js・Bun・Deno へのゼロコピー FFI を提供。`libvips` のような並列処理が 1〜2 コア VPS で引き起こす vCPU 飽和を回避するために設計。本番環境（このポートフォリオ）でも使用中。
-· [npm](https://www.npmjs.com/package/zenpix)
+C 製の画像処理エンジン。Lanczos-3 リサイズ・AVIF/WebP エンコードを実装し、Node.js・Bun・Deno へのゼロコピー FFI を提供。`libvips` のような並列処理が 1〜2 コア VPS で引き起こす vCPU 飽和を回避するために設計。本番環境（このポートフォリオ）でも使用中。
+· [npm](https://www.npmjs.com/package/zenpix) · [Docs](https://zenpix.tsukasa-art.com)
 
 ### [Amulet](https://github.com/tsukasa-art/amulet) — ハードウェアバインド型シークレット管理 CLI · MIT
 
 Argon2id + XChaCha20-Poly1305 でシークレットを暗号化し、OS の `machine_id` に暗号学的に紐付ける CLI。別のマシンにコピーしても復号できません。AI エージェントが `.env` を読める時代に向けて設計しました。
-· [リリース](https://github.com/tsukasa-art/amulet/releases)
+· [Docs](https://amulet.tsukasa-art.com) · [リリース](https://github.com/tsukasa-art/amulet/releases)
 
 ---
 

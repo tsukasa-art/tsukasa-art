@@ -32,13 +32,13 @@ Technical series on Zenn (ongoing):
 
 ### [zenpix](https://github.com/tsukasa-art/zenpix) — Image Engine for Constrained Environments · MIT
 
-Zig/C image processing engine with Lanczos-3 resizing and AVIF/WebP encoding. Zero-copy FFI into Node.js, Bun, and Deno. Built to avoid the vCPU saturation caused by multi-threaded processors like `libvips` on 1–2 core VPS nodes. In production on this portfolio.
-· [npm](https://www.npmjs.com/package/zenpix)
+C image processing engine with Lanczos-3 resizing and AVIF/WebP encoding. Zero-copy FFI into Node.js, Bun, and Deno. Built to avoid the vCPU saturation caused by multi-threaded processors like `libvips` on 1–2 core VPS nodes. In production on this portfolio.
+· [npm](https://www.npmjs.com/package/zenpix) · [Docs](https://zenpix.tsukasa-art.com)
 
 ### [Amulet](https://github.com/tsukasa-art/amulet) — Hardware-Bound Secret Manager · MIT
 
 CLI that encrypts secrets using Argon2id + XChaCha20-Poly1305, cryptographically bound to the local `machine_id`. Decryption fails on any other machine. Built for environments where `.env` files are readable by AI agents and scripts.
-· [Releases](https://github.com/tsukasa-art/amulet/releases)
+· [Docs](https://amulet.tsukasa-art.com) · [Releases](https://github.com/tsukasa-art/amulet/releases)
 
 ---
 
