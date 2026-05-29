@@ -51,4 +51,4 @@ Details → [tsukasa-art.com/engineer](https://tsukasa-art.com/engineer)
 
 ## Contact
 
-[tsukasa-art.com/contact](https://tsukasa-art.com/contact)
+[tsukasa-art.com/contact](https://tsukasa-art.com/contact) · [X @tsukasaartcom](https://x.com/tsukasaartcom)
