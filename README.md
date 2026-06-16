@@ -14,13 +14,13 @@ And once I understand it, I want to fix it.
 
 ## Selected Projects
 
-### [Wukiyo](https://github.com/tsukasa-art/Wukiyo)
+### [Melammu](https://github.com/tsukasa-art/melammu-vn)
 
 Making Windows-only visual novels accessible on Apple Silicon.
 
-Wukiyo is a compatibility project for running Japanese visual-novel games on Apple Silicon Mac, with a launcher, per-title environments, and an engine compatibility database.
+Melammu is a macOS launcher for running Japanese visual-novel games on Apple Silicon, with per-title Wine environments, engine detection, and a game library — no terminal required.
 
-[Website](https://wukiyo.app) · [Compatibility DB](https://wukiyo.app/compat) · [Zenn series](https://zenn.dev/tsukasa_art/articles/mac-eroge-compat-part1)
+[Launcher](https://github.com/tsukasa-art/melammu-vn) · [Wine Fork](https://github.com/tsukasa-art/swingby-wine) · [Zenn series](https://zenn.dev/tsukasa_art/articles/mac-eroge-compat-part1)
 
 ### [zenpix](https://github.com/tsukasa-art/zenpix)
 
