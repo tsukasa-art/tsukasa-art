@@ -14,13 +14,13 @@ And once I understand it, I want to fix it.
 
 ## Selected Projects
 
-### [Melammu](https://github.com/tsukasa-art/melammu-vn)
+### Orrery — running Windows visual novels on macOS
 
-Making Windows-only visual novels accessible on Apple Silicon.
+A Wine fork + launcher that runs a class of Windows apps on Apple Silicon that off-the-shelf Wine setups don't handle — built because Apple Silicon Macs can't boot Windows, leaving no native way to run these games. Custom patches across DirectDraw, DirectShow/VMR, and the macOS window driver; per-title prefixes; automatic engine detection.
 
-Melammu is a macOS launcher for running Japanese visual-novel games on Apple Silicon, with per-title Wine environments, engine detection, and a game library — no terminal required.
+**Systems work:** C, Wine internals, DirectX→Metal, Rosetta-aware x86/wow64, reverse-engineering rendering & window bugs down to upstream-style fixes.
 
-[Launcher](https://github.com/tsukasa-art/melammu-vn) · [Wine Fork](https://github.com/tsukasa-art/swingby-wine) · [Zenn series](https://zenn.dev/tsukasa_art/articles/mac-eroge-compat-part1)
+[Melammu launcher](https://github.com/tsukasa-art/melammu-vn) · [swingby-wine fork](https://github.com/tsukasa-art/swingby-wine) · [Zenn series](https://zenn.dev/tsukasa_art/articles/mac-eroge-compat-part1)
 
 ### [zenpix](https://github.com/tsukasa-art/zenpix)
 
