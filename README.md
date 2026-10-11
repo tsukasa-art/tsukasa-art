@@ -1,90 +1,99 @@
-# 月村つかさ / Tsukasa
+<p align="center">
+  <a href="https://tsukasa-art.com/"><img src="./assets/banner.png" alt="月村つかさ — Product Engineer。作って、調べて、直して、使われるところまで。" width="100%"></a>
+</p>
 
-[English](./README.en.md)
+<p align="center">
+  <a href="https://tsukasa-art.com/"><b>ポートフォリオサイト</b></a> ·
+  <a href="https://zenn.dev/tsukasa_art"><b>Zenn</b></a> ·
+  <a href="https://tsukasa-art.com/contact/"><b>お問い合わせ</b></a> ·
+  <a href="./README.en.md">English</a>
+</p>
 
-**プロダクトエンジニア — Web / macOS / 互換性レイヤー**
+> **就職先を探しています。** 内定承諾から1か月ほどで入社できます。業務の困りごとを解くアプリや、自社プロダクトの開発を志望しています。勤務地は札幌を希望（東京も検討）。<br>
+> GitHubとZennでは、ペンネームの「月村つかさ」を使っています。
 
-> **2027年入社に向けて就職活動中です。** 新卒・既卒エンジニア採用で、Web／クライアントを軸に、自社プロダクトの継続改善に関われる環境を志望しています。
+<br>
 
-利用者に届かない原因を調べ、設計・実装・検証・公開後の改善まで進めています。
+## 現場で使われているもの
 
-現在は、Windows向けビジュアルノベルをApple Silicon Macで動作させる **Orrery** と、その調査過程を公開する **Zennでの技術発信**を中心に活動しています。
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://tsukasa-art.com/projects/salon-register/"><img src="./assets/salon.jpg" alt="Salon Register の公開デモ。スマホの会計画面"></a>
+<h3>Salon Register</h3>
+<b>美容室で、2025年10月から毎日使われているレジ。</b><br>
+施術の組み合わせで変わる割引を、会計の中で自動で計算します。スタッフの手計算をなくし、計算ミスと接客の待ち時間を減らしました。<br><br>
+<a href="https://tsukasa-art.com/projects/salon-register/">事例を見る</a> · <a href="https://salon-register-demo.pages.dev/">公開デモ</a> · <a href="https://github.com/tsukasa-art/salon-register-demo">GitHub</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://tsukasa-art.com/projects/jan-sync/"><img src="./assets/jan.jpg" alt="JAN Sync の公開デモ。スマホでバーコードを読む画面"></a>
+<h3>JAN Sync</h3>
+<b>棚の前で、スマホだけで JAN を読んで数える。</b><br>
+同じ商品は読むたびに個数が増え、表計算へそのまま書き出せます。通信がなくても動き、読んだコードは端末の外へ送りません。<br><br>
+<a href="https://tsukasa-art.com/projects/jan-sync/">事例を見る</a> · <a href="https://jan-sync.pages.dev/">公開デモ</a> · <a href="https://github.com/tsukasa-art/jan-sync">GitHub</a>
+</td>
+</tr>
+</table>
 
-GitHubとZennでは、ペンネームの「月村つかさ」を使用しています。
+## Orrery — Windows のノベルゲームを、Mac で
 
----
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://tsukasa-art.com/projects/orrery/kasane/"><img src="./assets/kasane.jpg" alt="ランチャー KASANE の画面"></a>
+<h3>KASANE（カサネ）</h3>
+<b>Apple Silicon の Mac で、Windows のノベルゲームを遊ぶランチャー。</b><br>
+既存の Wine 構成では動かない作品を、描画・動画・音声・ウィンドウ制御まで一つずつ切り分けて動かしています。クローズドベータの待機リストを受付中です。<br><br>
+<a href="https://tsukasa-art.com/projects/orrery/kasane/">KASANE</a> · <a href="https://tsukasa-art.com/projects/orrery/">Orrery の全体像</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://tsukasa-art.com/projects/orrery/notes/why-mac-windows-games-are-hard/"><img src="./assets/notes.jpg" alt="Case Notes の記事の絵。黒いセーブ画像、白い動画、黒い動画"></a>
+<h3>Case Notes — 17本</h3>
+<b>動かなかった原因を、症状から層ごとに切り分けた記録。</b><br>
+「動画だけ白い」「セーブ画像が黒い」などの症状から、Wine・DirectX・Metal のどこで止まっていたかを突き止め、直した道筋を残しています。<br><br>
+<a href="https://tsukasa-art.com/projects/orrery/notes/why-mac-windows-games-are-hard/">入口の記事</a> · <a href="https://github.com/tsukasa-art/swingby-wine">swingby-wine</a> · <a href="https://github.com/tsukasa-art/swingby-dxvk">swingby-dxvk</a> · <a href="https://github.com/tsukasa-art/melammu-vn">melammu-vn</a>
+</td>
+</tr>
+</table>
 
-## Orrery — WindowsビジュアルノベルをApple Silicon Macへ
+## 絵を描くための道具
 
-Orreryは、既存のWine構成では動作しないWindows向けビジュアルノベルを、Apple Silicon Mac上で動かすための互換性プロジェクトです。
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://tsukasa-art.com/projects/zenpix/"><img src="./assets/zenpix.jpg" alt="zenpix のブラウザ版で一枚絵を AVIF に変換した結果"></a>
+<h3>zenpix</h3>
+<b>8.9 MB の絵が、91 KB に。</b><br>
+C 製の画像変換ライブラリ。読み込み・縮小・AVIF / WebP への書き出しを、コマンド・Node.js・Bun・Deno・ブラウザ（WASM）から使えます。このサイトの画像も zenpix で変換しています。<br><br>
+<a href="https://tsukasa-art.com/projects/zenpix/">事例を見る</a> · <a href="https://zenpix.tsukasa-art.com/">ドキュメント</a> · <a href="https://www.npmjs.com/package/zenpix">npm</a> · <a href="https://github.com/tsukasa-art/zenpix">GitHub</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://tsukasa-art.com/projects/teinte/"><img src="./assets/teinte.jpg" alt="teinte で一枚絵の主要色を出した画面"></a>
+<h3>teinte</h3>
+<b>絵の色を、数値と名前で並べる。</b><br>
+画像から主要色を取り出し、Open Color・Tailwind の近い色名と、配色の役割（ベース・アソート・アクセント）を出すデスクトップアプリ。Vue と Rust、Tauri で作っています。<br><br>
+<a href="https://tsukasa-art.com/projects/teinte/">事例を見る</a> · <a href="https://github.com/tsukasa-art/teinte">GitHub</a>
+</td>
+</tr>
+</table>
 
-アプリを起動するだけでなく、描画・動画再生・ウィンドウ制御・32/64-bit境界などの不具合を観測し、Wine、DirectX、Rosetta 2、Metalまで原因を切り分けています。修正は再現手順と検証結果を残し、公開可能な知見をZennとCase Noteへ還元しています。
+## Zenn
 
-- **[swingby-wine](https://github.com/tsukasa-art/swingby-wine)** — Wine 10.0を基底とするフォーク。CでmacOS/Rosetta向け互換性修正を管理
-- **[swingby-dxvk](https://github.com/tsukasa-art/swingby-dxvk)** — DXVK 2.4.1を基底とするフォーク。MoltenVK/Apple Silicon向け互換性修正を管理
-- **[melammu-vn](https://github.com/tsukasa-art/melammu-vn)** — ローカルライブラリUIと汎用エンジン判定を示す、SwiftUI製の公開版
-- **[Orrery overview](https://tsukasa-art.com/projects/orrery/)** — プロジェクト全体像と公開Case Note
-- **[Zenn連載](https://zenn.dev/tsukasa_art/articles/mac-eroge-compat-part1)** — 調査、失敗、修正、検証の記録
+調べた現象、立てた仮説、外れた道、最後の判断までを公開しています。
+- [連載：Mac で Windows のノベルゲームを動かす](https://zenn.dev/tsukasa_art/articles/mac-eroge-compat-part1)
+- [Book：コードから実行まで](https://zenn.dev/tsukasa_art/books/code-to-runtime) · [Book：動画再生のしくみ](https://zenn.dev/tsukasa_art/books/media-playback-pipeline)
 
-`melammu-vn`は、非公開の開発本体から公開可能な範囲を切り出したsource-only版です。ゲームデータ、認証情報、配布権限を確認できないランタイム、タイトル固有の証拠は含みません。
+## 開発で大事にしていること
 
----
+- 推測より先に、ログ・再現手順・実機の動きを確かめる
+- 技術は、使う人の体験・運用・再現性まで含めて選ぶ
+- AI を使っても、公開する範囲・レビュー・検証・最後の判断は自分で持つ
+- なぜ変えたか、何が直ったか、どう確かめたかを、後から追える形で残す
 
-## Zenn — 調査を再利用できる知識へ
-
-**[zenn.dev/tsukasa_art](https://zenn.dev/tsukasa_art)**
-
-Orreryで得た知見を中心に、発生した現象、立てた仮説、検証方法、失敗した経路、最終的な判断を公開しています。完成後の結論だけでなく、どの証拠から方針を変えたかまで残すことで、他の開発者が追試できる形を目指しています。
-
----
-
-## 利用者へ届けたプロダクト
-
-### [JAN Sync](https://github.com/tsukasa-art/jan-sync)
-
-店頭でJANコードを読み取り、IndexedDBへ保存し、バーコード生成とCSV/TSV出力までローカルで行うオフラインPWAです。小売現場の作業を、通信状態に依存せず完結させるために設計しました。
-
-**[Live demo](https://jan-sync.pages.dev/)**
-
-### [Salon Register Demo](https://github.com/tsukasa-art/salon-register-demo)
-
-美容サロン向けレジシステムの公開デモです。実運用データや内部コードを含めず、メニュー選択、会計、IndexedDBによるローカル保存など、利用者向けの操作体験を確認できる形に分離しています。
-
-**[Live demo](https://salon-register-demo.pages.dev/)**
-
----
-
-## ライブラリとデスクトップアプリ
-
-### [zenpix](https://github.com/tsukasa-art/zenpix)
-
-制約のある実行環境向けのC製画像処理エンジンです。JPEG / PNG / WebP / AVIFなどのデコード、Lanczos-3リサイズ、AVIF / WebPエンコードを提供し、Node.js・Bun・Deno・WebAssemblyから利用できます。
-
-**[npm](https://www.npmjs.com/package/zenpix)** · **[Docs](https://zenpix.tsukasa-art.com)**
-
-### [Teinte](https://github.com/tsukasa-art/teinte)
-
-画像の支配色、配色、WCAGコントラスト、EXIFなどをローカルで分析するTauriデスクトップアプリです。Vue 3 / TypeScriptのUIとRustの解析処理を分離し、複数OSのCIとリリース手順を整備しています。
-
----
-
-## 開発で重視していること
-
-- 推測より先に、ログ・再現手順・実機挙動を確認する
-- 技術選定を、利用者体験・運用性・再現性まで含めて判断する
-- AIエージェントを利用しても、公開範囲、レビュー、検証、最終判断は人間が担う
-- 変更理由、解決した問題、検証結果を後から追える形で残す
-
-**Languages:** TypeScript / JavaScript / C / Rust / Swift
-
-**Frameworks & UI:** React / React Router v7 / Next.js / Astro / Vue / SolidJS / Svelte / SvelteKit / SwiftUI / Tauri
-
+**Languages:** TypeScript / JavaScript / C / Rust / Swift<br>
+**Frameworks & UI:** React / React Router v7 / Next.js / Astro / Vue / SolidJS / Svelte / SvelteKit / SwiftUI / Tauri<br>
 **プロダクト・アプリケーション実装:** Ruby on Railsによる再構築プロトタイプ / PWA・オフラインファースト / CMS・リッチテキストエディタ（Tiptap）/ 認証・セッション管理（Oslo / Better Auth）/ PostgreSQL・Cloudflare D1 / Wine / macOS / Cloudflare
-
----
 
 ## Contact
 
-採用・開発に関するご連絡は、[ポートフォリオサイト](https://tsukasa-art.com/)上部の「Contact」からお願いします。
-
-**[Zenn](https://zenn.dev/tsukasa_art)** · **[X @tsukasaartcom](https://x.com/tsukasaartcom)**
+採用・開発のご相談は、[お問い合わせフォーム](https://tsukasa-art.com/contact/)からお願いします。
