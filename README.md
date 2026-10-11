@@ -62,14 +62,14 @@
 <tr>
 <td width="50%" valign="top">
 <a href="https://tsukasa-art.com/projects/zenpix/"><img src="./assets/zenpix.jpg" alt="zenpix のブラウザ版で一枚絵を AVIF に変換した結果"></a>
-<h3>zenpix</h3>
+<h3><a href="https://tsukasa-art.com/projects/zenpix/"><img src="./assets/icon-zenpix.svg" width="28" height="28" align="top" alt=""></a>&nbsp;zenpix</h3>
 <b>8.9 MB の絵が、91 KB に。</b><br>
 C 製の画像変換ライブラリ。読み込み・縮小・AVIF / WebP への書き出しを、コマンド・Node.js・Bun・Deno・ブラウザ（WASM）から使えます。このサイトの画像も zenpix で変換しています。<br><br>
 <a href="https://tsukasa-art.com/projects/zenpix/">事例を見る</a> · <a href="https://zenpix.tsukasa-art.com/">ドキュメント</a> · <a href="https://www.npmjs.com/package/zenpix">npm</a> · <a href="https://github.com/tsukasa-art/zenpix">GitHub</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://tsukasa-art.com/projects/teinte/"><img src="./assets/teinte.jpg" alt="teinte で一枚絵の主要色を出した画面"></a>
-<h3>teinte</h3>
+<h3><a href="https://tsukasa-art.com/projects/teinte/"><img src="./assets/icon-teinte.svg" width="28" height="28" align="top" alt=""></a>&nbsp;teinte</h3>
 <b>絵の色を、数値と名前で並べる。</b><br>
 画像から主要色を取り出し、Open Color・Tailwind の近い色名と、配色の役割（ベース・アソート・アクセント）を出すデスクトップアプリ。Vue と Rust、Tauri で作っています。<br><br>
 <a href="https://tsukasa-art.com/projects/teinte/">事例を見る</a> · <a href="https://github.com/tsukasa-art/teinte">GitHub</a>

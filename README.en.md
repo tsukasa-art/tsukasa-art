@@ -62,14 +62,14 @@ From symptoms like "only the video is white" or "the save image is black", each 
 <tr>
 <td width="50%" valign="top">
 <a href="https://tsukasa-art.com/projects/zenpix/"><img src="./assets/zenpix.jpg" alt="Result of converting an illustration to AVIF in zenpix's browser demo"></a>
-<h3>zenpix</h3>
+<h3><a href="https://tsukasa-art.com/projects/zenpix/"><img src="./assets/icon-zenpix.svg" width="28" height="28" align="top" alt=""></a>&nbsp;zenpix</h3>
 <b>An 8.9 MB artwork, down to 91 KB.</b><br>
 An image conversion library written in C. Decoding, resizing, and AVIF / WebP encoding are available from the CLI, Node.js, Bun, Deno, and the browser (WASM). The images on my portfolio are converted with it.<br><br>
 <a href="https://tsukasa-art.com/projects/zenpix/">Case study</a> · <a href="https://zenpix.tsukasa-art.com/">Docs</a> · <a href="https://www.npmjs.com/package/zenpix">npm</a> · <a href="https://github.com/tsukasa-art/zenpix">GitHub</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://tsukasa-art.com/projects/teinte/"><img src="./assets/teinte.jpg" alt="teinte showing the main colors of an illustration"></a>
-<h3>teinte</h3>
+<h3><a href="https://tsukasa-art.com/projects/teinte/"><img src="./assets/icon-teinte.svg" width="28" height="28" align="top" alt=""></a>&nbsp;teinte</h3>
 <b>Put the colors of an artwork into numbers and names.</b><br>
 A desktop app that extracts the main colors of an image, finds the nearest Open Color and Tailwind names, and sorts them into base, assort, and accent roles. Built with Vue, Rust, and Tauri.<br><br>
 <a href="https://tsukasa-art.com/projects/teinte/">Case study</a> · <a href="https://github.com/tsukasa-art/teinte">GitHub</a>
