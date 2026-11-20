@@ -94,9 +94,6 @@ What I observed, the hypotheses I tried, the dead ends, and the final call — w
 
 Findy standardized skill score: 73.0 (calculated from public repositories only).
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tsukasa-art&show_icons=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsukasa-art&show_icons=true&layout=compact)
-
 ## Creative work
 
 I draw [*Shiori no Ichimai* (しおりの一枚)](https://tsukasa-art.com/works/#serial), a four-panel comic about a school photography club and the afternoons its members spend together. New strips go up on [X (@tsukasaartcom)](https://x.com/tsukasaartcom) every Wednesday and Sunday at 9 p.m. JST.

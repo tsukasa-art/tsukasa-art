@@ -94,9 +94,6 @@ C 製の画像変換ライブラリ。読み込み・縮小・AVIF / WebP への
 
 Findyスキル偏差値 73.0（公開リポジトリのみの算出）
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tsukasa-art&show_icons=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsukasa-art&show_icons=true&layout=compact)
-
 ## 創作
 
 [『しおりの一枚』](https://tsukasa-art.com/works/#serial)は、写真部の放課後を描く4コマ漫画です。毎週水曜・日曜の21時に[X（@tsukasaartcom）](https://x.com/tsukasaartcom)で更新しています。
