@@ -90,9 +90,16 @@ C 製の画像変換ライブラリ。読み込み・縮小・AVIF / WebP への
 - AI を使っても、公開する範囲・レビュー・検証・最後の判断は自分で持つ
 - なぜ変えたか、何が直ったか、どう確かめたかを、後から追える形で残す
 
-**Languages:** TypeScript / JavaScript / C / Rust / Swift<br>
-**Frameworks & UI:** React / React Router v7 / Next.js / Astro / Vue / SolidJS / Svelte / SvelteKit / SwiftUI / Tauri<br>
-**プロダクト・アプリケーション実装:** Ruby on Railsによる再構築プロトタイプ / PWA・オフラインファースト / CMS・リッチテキストエディタ（Tiptap）/ 認証・セッション管理（Oslo / Better Auth）/ PostgreSQL・Cloudflare D1 / Wine / macOS / Cloudflare
+**主に使う技術**　Swift / C / TypeScript / Svelte / Go
+
+Findyスキル偏差値 73.0（公開リポジトリのみの算出）
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tsukasa-art&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsukasa-art&show_icons=true&layout=compact)
+
+## 創作
+
+[『しおりの一枚』](https://tsukasa-art.com/works/#serial)は、写真部の放課後を描く4コマ漫画です。毎週水曜・日曜の21時に[X（@tsukasaartcom）](https://x.com/tsukasaartcom)で更新しています。
 
 ## Contact
 
