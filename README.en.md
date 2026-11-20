@@ -90,9 +90,16 @@ What I observed, the hypotheses I tried, the dead ends, and the final call — w
 - When I use AI agents, I keep the scope of disclosure, review, verification, and the final call
 - Leave a trail of why something changed, what it fixed, and how it was verified
 
-**Languages:** TypeScript / JavaScript / C / Rust / Swift<br>
-**Frameworks & UI:** React / React Router v7 / Next.js / Astro / Vue / SolidJS / Svelte / SvelteKit / SwiftUI / Tauri<br>
-**Product engineering:** Ruby on Rails rebuild prototype / PWA and offline-first / CMS and rich-text editing (Tiptap) / Authentication and sessions (Oslo / Better Auth) / PostgreSQL and Cloudflare D1 / Wine / macOS / Cloudflare
+**Main technologies:** Swift / C / TypeScript / Svelte / Go
+
+Findy standardized skill score: 73.0 (calculated from public repositories only).
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tsukasa-art&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsukasa-art&show_icons=true&layout=compact)
+
+## Creative work
+
+I draw [*Shiori no Ichimai* (しおりの一枚)](https://tsukasa-art.com/works/#serial), a four-panel comic about a school photography club and the afternoons its members spend together. New strips go up on [X (@tsukasaartcom)](https://x.com/tsukasaartcom) every Wednesday and Sunday at 9 p.m. JST.
 
 ## Contact
 
